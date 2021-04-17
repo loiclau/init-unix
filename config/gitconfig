@@ -1,0 +1,20 @@
+[color]
+  diff = auto
+  status = auto
+  branch = auto
+[user]
+  name = Loic Laurent
+  email = loic.lau@gmail.com
+[alias]
+  ci = commit
+  co = checkout
+  st = status
+  br = branch
+[github]
+  user = loiclau
+[push]
+  default = simple
+[branch]
+  autosetuprebase = always
+[branch "master"]
+  rebase = true
