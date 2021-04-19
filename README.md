@@ -23,6 +23,7 @@ sudo apt-get install vim
 ```
 sudo tar -xzf PhpStorm-*.tar.gz -C /opt
 ```
+To create a desktop entry: menu Tools | Create Desktop Entry
 
 ## Install GIT
 ```
@@ -56,6 +57,35 @@ sudo apt -y  install dbeaver-ce
 
 ## Install Postman
 ```
-
+sudo snap install postman
 ```
+
+## Install Curl
+```
+sudo apt-get install curl libcurl4
+```
+
+## Install Php
+```
+sudo apt install php7.4-cli php7.4-curl
+```
+* Check Extensions
+```
+php -m
+```
+
+## Install Composer
+```
+curl -sS https://getcomposer.org/installer | php
+sudo mv composer.phar /usr/local/bin/composer
+sudo chown -R llaurent /usr/local/bin/composer
+```
+
+## Install Symfony
+```
+wget https://get.symfony.com/cli/installer -O - | bash
+sudo mv /home/llaurent/.symfony/bin/symfony /usr/local/bin/symfony
+sudo chown -R llaurent /usr/local/bin/symfony
+```
+
 
