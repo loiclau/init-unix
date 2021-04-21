@@ -44,7 +44,14 @@ Add the following instructions: [see](config/bashrc).
 ## Install Mariadb
 ```
 sudo apt install mariadb-server
+sudo mysql
 
+```
+* Add user
+```
+CREATE USER 'iamroot'@'localhost' IDENTIFIED BY 'iamroot';
+GRANT ALL PRIVILEGES ON * . * TO 'iamroot'@'localhost';
+FLUSH PRIVILEGES;
 ```
 
 ## Install DBeaver
@@ -53,6 +60,18 @@ wget -O - https://dbeaver.io/debs/dbeaver.gpg.key | sudo apt-key add -
 echo "deb https://dbeaver.io/debs/dbeaver-ce /" | sudo tee /etc/apt/sources.list.d/dbeaver.list
 sudo apt updatesudo apt update
 sudo apt -y  install dbeaver-ce
+```
+
+## Install Postman
+```
+sudo apt install flameshot
+```
+
+* Settings>Keyboard Shortcuts>Custom shortcuts
+```
+flameshot
+flameshot.gui
+Print
 ```
 
 ## Install Postman
@@ -67,7 +86,7 @@ sudo apt-get install curl libcurl4
 
 ## Install Php
 ```
-sudo apt install php7.4-cli php7.4-curl
+sudo apt install php7.4-cli php7.4-curl php7.4-xml php7.4-mysql php7.4-xsl php7.4-mbstring
 ```
 * Check Extensions
 ```
