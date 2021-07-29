@@ -58,7 +58,7 @@ FLUSH PRIVILEGES;
 ```
 wget -O - https://dbeaver.io/debs/dbeaver.gpg.key | sudo apt-key add -
 echo "deb https://dbeaver.io/debs/dbeaver-ce /" | sudo tee /etc/apt/sources.list.d/dbeaver.list
-sudo apt updatesudo apt update
+sudo apt update
 sudo apt -y  install dbeaver-ce
 ```
 
@@ -116,15 +116,7 @@ sudo apt-get update
 sudo apt-get install docker-ce docker-ce-cli containerd.io
 sudo apt install docker-compose
 ```
-
-
-
-
-
-
-
-
-
-
-
-
+## Install Slack
+```
+sudo snap install slack --classic
+```
